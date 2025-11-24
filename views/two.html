@@ -1,0 +1,17 @@
+<html>
+<h1> Hello</h1>
+
+<body>
+	<p id="a1">Hello <%=animal%> </p>
+	
+	<button onclick=qFunction()>Press Me</button>
+	<script>
+		document.writeln("Good morning <%=animal%>");
+		
+		function qFunction()
+			{
+				document.getElementById("a1").innerHTML="yes";
+			}
+	</script>
+</body>
+</html>
