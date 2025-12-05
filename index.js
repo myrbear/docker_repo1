@@ -24,7 +24,7 @@ app.post("/two", function(req, res){
 });
 
 app.get("/madlibs", (req, res) => {res.render('./madlibs.html')})
-app.pos("/madlibs", function(req, res) {
+app.post("/madlibs", function(req, res) {
 
 	var animal=req.param("myvalue");
 	console.log(animal)
