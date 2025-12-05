@@ -23,6 +23,15 @@ app.post("/two", function(req, res){
 	res.render("two.html", {animal:animal});
 });
 
+app.get("/madlibs", (req, res) => {res.render('./madlibs.html')})
+app.pos("/madlibs", function(req, res) {
+
+	var animal=req.param("myvalue");
+	console.log(animal)
+	res.render("madlibs.html",{animal:animal});
+
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
